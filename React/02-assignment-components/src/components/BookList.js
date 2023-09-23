@@ -19,7 +19,7 @@ class BookList extends Component {
                 {
                    books.map((item,key)=>{
                     return (
-                        <Book bool={item} key={key}/>
+                        <Book book={item} key={key}/>
                     )
                    })
                 }
@@ -28,3 +28,5 @@ class BookList extends Component {
         )
     }
 }
+
+export default BookList;
