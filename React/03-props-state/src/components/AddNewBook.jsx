@@ -1,8 +1,11 @@
+import { Dialog } from '@mui/material'
 import React from 'react'
 
-const AddNewBook = () => {
+const AddNewBook = ({addNewBook,setAddNewBook,setBooks,books}) => {
   return (
-    <div>AddNewBook</div>
+    <Dialog open onClose={()=>{setAddNewBook(false)}}>
+
+    </Dialog>
   )
 }
 

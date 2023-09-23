@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, Typography} from '@mui/material'
 
 const Book = ({book}) => {
   return (
-    <Card>
+    <Card sx={{margin:5}}>
         <CardHeader title={book.title}/>
         <CardContent>
             <Typography>{book.author}</Typography>
