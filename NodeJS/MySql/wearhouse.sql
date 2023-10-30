@@ -1,0 +1,5 @@
+-- Query 1: Find the item that has the minimum weight
+SELECT ITEMNO, DESCRIPTION, WEIGHT, COST
+FROM ITEMS
+WHERE WEIGHT = (SELECT MIN(WEIGHT) FROM ITEMS);
+
